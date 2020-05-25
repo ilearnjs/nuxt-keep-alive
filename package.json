@@ -1,0 +1,23 @@
+{
+  "name": "feed",
+  "version": "1.0.0",
+  "description": "My smashing Nuxt.js project",
+  "author": " ",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "nuxt": "^2.0.0",
+    "vue-observe-visibility": "^0.4.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  }
+}
