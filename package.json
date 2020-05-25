@@ -1,8 +1,8 @@
 {
-  "name": "feed",
+  "name": "nuxt-keep-alive",
   "version": "1.0.0",
-  "description": "My smashing Nuxt.js project",
-  "author": " ",
+  "description": "Paly with nuxt keep-alive",
+  "author": "ilearnjs",
   "private": true,
   "scripts": {
     "dev": "nuxt",
