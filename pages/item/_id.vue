@@ -11,6 +11,7 @@
 import FeedItem from '@/components/FeedItem';
 
 export default {
+  scrollToTop: true,
   components: {
     FeedItem,
   },
@@ -18,7 +19,7 @@ export default {
     app,
     route,
   }) {
-    const id = route.params.item;
+    const id = route.params.id;
     const item = app.$api.items.getItem(id); 
 
     return {

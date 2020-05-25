@@ -53,7 +53,8 @@ export default {
     };
   },
   async fetch() {
-    const { items, hasNextPage } = this.$api.items.getList(this.page);
+    const username = this.$route.params.user;
+    const { items, hasNextPage } = this.$api.items.getList(username, this.page);
     this.items = items;
     this.hasNextPage = hasNextPage;
   },
@@ -74,7 +75,8 @@ export default {
     loadMore(isVisible) {
       if (isVisible) {
         this.page = this.page + 1;
-        const { items, hasNextPage } = this.$api.items.getList(this.page);
+        const username = this.$route.params.user;
+        const { items, hasNextPage } = this.$api.items.getList(username, this.page);
         this.items.push(...items);
         this.hasNextPage = hasNextPage;
       }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      User
+      {{ item.user.displayName }}
     </div>
     <div
       class="square relative cursor-pointer border border-gray-500"
@@ -18,7 +18,7 @@
       </div>
       <n-link
         v-if="showLink"
-        :to="`/${$route.params.user}/${item.id}`"
+        :to="`/item/${item.id}`"
       >
         Open
       </n-link>
