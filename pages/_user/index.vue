@@ -49,11 +49,11 @@ export default {
     const user = app.$api.users.getUser(username);
 
     return {
-      user,
+      user, 
     };
   },
   async fetch() {
-    const { items, hasNextPage } = this.$api.media.getList(this.page);
+    const { items, hasNextPage } = this.$api.items.getList(this.page);
     this.items = items;
     this.hasNextPage = hasNextPage;
   },
@@ -74,7 +74,7 @@ export default {
     loadMore(isVisible) {
       if (isVisible) {
         this.page = this.page + 1;
-        const { items, hasNextPage } = this.$api.media.getList(this.page);
+        const { items, hasNextPage } = this.$api.items.getList(this.page);
         this.items.push(...items);
         this.hasNextPage = hasNextPage;
       }

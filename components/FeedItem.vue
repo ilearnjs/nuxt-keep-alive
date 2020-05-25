@@ -17,6 +17,7 @@
         {{ item.title }}
       </div>
       <n-link
+        v-if="showLink"
         :to="`/${$route.params.user}/${item.id}`"
       >
         Open
@@ -32,6 +33,10 @@
         type: Object,
         required: true,
       },
+      showLink: {
+        type: Boolean,
+        default: true,
+      }
     },
   };
 </script>

@@ -1,10 +1,10 @@
 import createUsers from '@/api/users';
-import createMedia from '@/api/media';
+import createItems from '@/api/items';
 
 export default (context, inject) => {
   const api = {
     users: createUsers(),
-    media: createMedia(),
+    items: createItems(),
   };
 
   inject('api', api);
